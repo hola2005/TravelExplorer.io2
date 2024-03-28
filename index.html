@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Туристичний сайт - Головна</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-text">
+        <h1>Туристичний сайт</h1>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="travel.html">Подорожі та тури</a></li>
+          <li><a href="tips.html">Поради та інформація для туристів</a></li>
+          <li><a href="contact.html">Контакти та зворотній зв’язок</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="main-heading">
+        <h2>Ласкаво просимо на головну сторінку</h2>
+        <p>
+          Це головна сторінка туристичного сайту. Тут ви можете знайти загальну
+          інформацію про наш сайт та послуги, які ми пропонуємо.
+        </p>
+      </div>
+      <div class="services">
+        <h3>Наші послуги:</h3>
+        <ul>
+          <li>Організація подорожей та турів</li>
+          <li>Консультації та поради для туристів</li>
+          <li>Бронювання готелів та транспорту</li>
+        </ul>
+      </div>
+      <h3 class="contact-header">Контакти:</h3>
+      <p class="contact-info"><strong>Телефон:</strong> +380123456789</p>
+      <p class="contact-info"><strong>Email:</strong> info@tourist-site.com</p>
+
+      <h3 class="feedback-header">Форма зворотнього зв’язку:</h3>
+      <form class="form" action="submit_form.php" method="post">
+        <label for="name">Ім’я:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="input-field"
+        /><br /><br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="input-field"
+        /><br /><br />
+        <label for="message">Повідомлення:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          class="text-area"
+        ></textarea
+        ><br /><br />
+        <input type="submit" value="Відправити" class="submit-btn" />
+      </form>
+      <div class="tour-container">
+        <h3 class="tour">Наші тури:</h3>
+        <table class="tour">
+          <tr>
+            <th>Місце</th>
+            <th>Тривалість</th>
+            <th>Ціна</th>
+          </tr>
+          <tr>
+            <td>Париж, Франція</td>
+            <td>7 днів</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Рим, Італія</td>
+            <td>5 днів</td>
+            <td>$800</td>
+          </tr>
+          <tr>
+            <td>Лондон, Велика Британія</td>
+            <td>6 днів</td>
+            <td>$900</td>
+          </tr>
+        </table>
+      </div>
+      <h3>Зображення:</h3>
+      <img src="img/paris.jpg" alt="Париж" />
+      <h3>Відео:</h3>
+      <p>Дивіться відео про наші тури на нашому каналі YouTube.</p>
+      <iframe
+        class="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/uYFtWVv5F3E"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <footer class="footer">
+      <p>Туристичний сайт &copy; 2024</p>
+    </footer>
+  </body>
+</html>
